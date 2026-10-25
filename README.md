@@ -73,6 +73,9 @@ public/         Static assets (US land GeoJSON)
 
 ## Data sources
 
+- [Anthropic API](https://www.anthropic.com/) - AI chatbot
 - [NASA FIRMS](https://firms.modaps.eosdis.nasa.gov) – satellite fire detections (VIIRS / MODIS)
 - [AirNow](https://www.airnow.gov) – U.S. air quality observations
 - [Open-Meteo](https://open-meteo.com) – air quality forecasts and fallback data
+- [Mapbox API](https://www.mapbox.com/) - map 
+- [ESRI API](https://www.esri.com/en-us/arcgis/open-vision/initiatives/developer-api) - map
