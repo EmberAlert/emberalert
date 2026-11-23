@@ -45,7 +45,7 @@ export async function GET() {
   }
 
   try {
-    const hotspots = await fetchFIRMSHotspots(mapKey, "VIIRS_SNPP_NRT", 1);
+    const hotspots = await fetchFIRMSHotspots(mapKey, "VIIRS_NOAA20_NRT", 1);
 
     // Cluster by 1° grid cell
     const cells = new Map<string, { lat: number; lng: number; frp: number; count: number; label: string }>();

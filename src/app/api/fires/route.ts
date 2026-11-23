@@ -4,7 +4,7 @@ import { fetchFIRMSHotspots, hotspotsToGeoJSON } from "@/lib/api/firms";
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
   const days = parseInt(searchParams.get("days") ?? "1");
-  const source = (searchParams.get("source") ?? "VIIRS_SNPP_NRT") as Parameters<typeof fetchFIRMSHotspots>[1];
+  const source = (searchParams.get("source") ?? "VIIRS_NOAA20_NRT") as Parameters<typeof fetchFIRMSHotspots>[1];
   const mapKey = process.env.FIRMS_MAP_KEY;
 
   if (!mapKey) {

@@ -4,7 +4,7 @@ const FIRMS_BASE = "https://firms.modaps.eosdis.nasa.gov/api";
 
 export async function fetchFIRMSHotspots(
   mapKey: string,
-  source: "VIIRS_SNPP_NRT" | "MODIS_NRT" | "VIIRS_NOAA20_NRT" = "VIIRS_SNPP_NRT",
+  source: "VIIRS_SNPP_NRT" | "MODIS_NRT" | "VIIRS_NOAA20_NRT" | "VIIRS_NOAA21_NRT" = "VIIRS_NOAA20_NRT",
   days: number = 1,
   region: string = "-165,18,-66,50"
 ): Promise<FireHotspot[]> {
